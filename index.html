@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      PlayStation Official Site: Consoles, Games, Accessories and More
+      PlayStation® (Un)Official Site: Consoles, Games, Accessories and More
     </title>
+    <script src="/topbar.js"></script>
     <script
       src="https://kit.fontawesome.com/e1f9437847.js"
       crossorigin="anonymous"
@@ -30,54 +31,171 @@
           <img
             src="images/ps-logo.png"
             alt="PlayStation logo"
-            width="42"
-            height="32"
+            width="40"
+            height="30"
           />
         </a>
         <nav class="menu-items-container" aria-label="Main navigation">
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">Games</button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+          <div
+            class="menu-item-container"
+            id="games"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="games-button"
+              aria-haspopup="true"
+            >
+              Games
+            </button>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="games-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">PS5</button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+          <div
+            class="menu-item-container"
+            id="ps5"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="ps5-button"
+              aria-haspopup="true"
+            >
+              PS5
+            </button>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="ps5-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">PS4</button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+          <div
+            class="menu-item-container"
+            id="ps4"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="ps4-button"
+              aria-haspopup="true"
+            >
+              PS4
+            </button>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="ps4-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">
+          <div
+            class="menu-item-container"
+            id="services"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="services-button"
+              aria-haspopup="true"
+            >
               Services
             </button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="services-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">
+          <div
+            class="menu-item-container"
+            id="accessories"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="accessories-button"
+              aria-haspopup="true"
+            >
               Accessories
             </button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="accessories-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">News</button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+          <div
+            class="menu-item-container"
+            id="news"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="news-button"
+              aria-haspopup="true"
+            >
+              News
+            </button>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="news-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">Store</button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+          <div
+            class="menu-item-container"
+            id="store"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="store-button"
+              aria-haspopup="true"
+            >
+              Store
+            </button>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="store-icon"
+              aria-hidden="true"
+            ></i>
           </div>
-          <div class="menu-item-container">
-            <button class="menu-item-label" aria-haspopup="true">
+          <div
+            class="menu-item-container"
+            id="support"
+            onmouseenter="handleTopBarIconEnter(this.id)"
+            onmouseleave="handleTopBarIconLeave(this.id)"
+          >
+            <button
+              class="menu-item-label"
+              id="support-button"
+              aria-haspopup="true"
+            >
               Support
             </button>
-            <i class="fa-solid fa-angle-down fa-xs" aria-hidden="true"></i>
+            <i
+              class="fa-solid fa-angle-down fa-xs"
+              id="support-icon"
+              aria-hidden="true"
+            ></i>
           </div>
         </nav>
       </div>
       <div class="ps-header-container">
         <button class="sign-in-btn">Sign In</button>
-        <!-- TODO: Complete for Search -->
+        <button class="search-button">
+          <span class="search-text">Search</span>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
     </header>
   </body>
