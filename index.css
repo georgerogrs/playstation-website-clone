@@ -5,8 +5,9 @@
 
 body {
   margin: 0;
-  background-color: #414141;
+  background-color: #ffffff;
   height: 150vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .sony-header {
@@ -30,6 +31,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: sticky;
+  z-index: 2;
   top: 0;
 }
 
@@ -72,7 +74,7 @@ body {
   background-color: var(--main-font-blue);
   border: none;
   height: fit-content;
-  padding: 2px 14px 4px 14px;
+  padding: 4px 14px 5px 14px;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
@@ -110,6 +112,37 @@ body {
 
 .fa-magnifying-glass {
   margin: 5px 15px 0 48px;
+}
+
+.cover-image-overlay {
+  height: 37vw;
+  background-repeat: no-repeat;
+}
+
+.cover-image {
+  height: 100%;
+  width: 100%;
+}
+
+.cover-image-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52%;
+  width: 60%;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+}
+
+.cover-image-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cover-image-title {
+  color: white;
 }
 
 @media only screen and (max-width: 1600px) {
